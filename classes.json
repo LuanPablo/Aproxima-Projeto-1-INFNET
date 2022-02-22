@@ -1,3 +1,16 @@
 {
-    "teste":"teste"
-}   
+    "Turmas": [
+        {
+            "Turma": "2001",
+            "disciplina": "Físico-Química"
+        },
+        {
+            "Turma": "2001",
+            "disciplina": "Físico-Química"
+        },
+        {
+            "Turma": "3001",
+            "disciplina":"Qúmica Orgânica"
+        }
+    ]
+}
