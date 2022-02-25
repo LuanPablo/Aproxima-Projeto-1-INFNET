@@ -1,6 +1,6 @@
 /* RESET */
 * {
-    border: none;
+    border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +8,7 @@
 
 :root {
     --cor-primaria: #0DBCA7;
+    --cor-secundaria: #D1F6EF;
     font-size: 62.5%;
     /*Por default, 16px é igual a 100%, adotaremos 62,5% que é igual a 10px, para 
     facilitar a conversão para rem, sendo assim,  10px equivale a 1rem. Outro exemplo:
@@ -52,11 +53,13 @@ header>div {
     padding-left: 2.4rem;
 
 }
-.perfil_conteudo > p{
+
+.perfil_conteudo>p {
     font-size: 1.2rem;
     padding-top: 0.25rem;
 }
-.perfil_conteudo h2{
+
+.perfil_conteudo h2 {
     font-size: 2rem;
 }
 
@@ -79,10 +82,44 @@ a {
     color: #fff;
     text-decoration: none;
 }
-
-footer{
+main{
+    position: relative;
+}
+.banner {
+    height: 50rem;
+    background: var(--cor-secundaria);
+}
+.banner_fundo {
+    position:absolute;
+    top: 11.8rem;
+    width: 100%;
+    height: 26.4rem;
+    background: hsla(0, 0%, 100%, 0.65);
+}
+.banner > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner_img{
+    display: flex;
+    align-items: flex-end;
+    height: 50rem;
+    z-index: 2;
+}
+.banner_text {
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    color: #0DBCA7;
+    z-index: 1;
+}
+.banner_img > img{
+    width: 46.4rem;
+    height: 46rem;
+}
+footer {
+    text-align: center;
     font-size: 1.4rem;
-    text-align:center;
     color: #fff;
     background-color: var(--cor-primaria);
     padding: 2rem 0 2rem 0;
