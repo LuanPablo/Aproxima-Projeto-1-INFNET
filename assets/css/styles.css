@@ -1,4 +1,4 @@
-/* RESET
+/* RESET */
 * {
     border: none;
     margin: 0;
@@ -12,7 +12,7 @@
     /*Por default, 16px é igual a 100%, adotaremos 62,5% que é igual a 10px, para 
     facilitar a conversão para rem, sendo assim,  10px equivale a 1rem. Outro exemplo:
     1.5 rem equivale a 15px, basta multiplicar 1.5 rem por 10, ou do contrario, dividir por 10*/
-/* }
+ }
 
 .container{
     width: 100%;
@@ -22,9 +22,7 @@
 /* body{
 
 } */
-/* 
-.header{
-    width: 100%;
+header{
     background: var(--cor-primaria);
 }
 .header > div{
@@ -45,16 +43,3 @@
 .nav li{
     list-style: none;
 }
-
-
-@media(max-width:1200px){ /*Tablet*/
-    
-/* }
-@media(max-width:991px){  /*Tablet*/
-    
-/* }
-@media(max-width:600px){  /*Celular*/
-    
-/* }
-@media(max-width:480px){  /*Celular*/
-    
