@@ -79,3 +79,11 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+footer{
+    font-size: 1.4rem;
+    text-align:center;
+    color: #fff;
+    background-color: var(--cor-primaria);
+    padding: 2rem 0 2rem 0;
+}
