@@ -5,41 +5,77 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    
-    --cor-primaria:#0DBCA7;
-    font-size: 62,5%;
+
+:root {
+    --cor-primaria: #0DBCA7;
+    font-size: 62.5%;
     /*Por default, 16px é igual a 100%, adotaremos 62,5% que é igual a 10px, para 
     facilitar a conversão para rem, sendo assim,  10px equivale a 1rem. Outro exemplo:
     1.5 rem equivale a 15px, basta multiplicar 1.5 rem por 10, ou do contrario, dividir por 10*/
- }
+}
 
-.container{
+.container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
 }
-/* body{
 
-} */
-header{
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
     background: var(--cor-primaria);
 }
-.header > div{
+
+header>div {
     display: flex;
     justify-content: space-between;
 }
-.nav{
-    display: flex;
+
+.perfil {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
+    padding: 1.4rem 0 1.4rem 0;
 }
-.nav ul{
-    display: inherit;
+
+.perfil img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: solid 0.3rem #fff;
+}
+
+.perfil_conteudo {
+    color: #fff;
+    padding-left: 2.4rem;
 
 }
-.nav a{
-    text-decoration: none;
+.perfil_conteudo > p{
+    font-size: 1.2rem;
+    padding-top: 0.25rem;
 }
-.nav li{
+.perfil_conteudo h2{
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+ul {
+    display: inherit;
+}
+
+li {
     list-style: none;
+    padding-right: 3rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
