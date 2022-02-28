@@ -15,6 +15,7 @@
     1.5 rem equivale a 15px, basta multiplicar 1.5 rem por 10, ou do contrario, dividir por 10*/
 }
 
+
 .container {
     width: 100%;
     max-width: 124.0rem;
@@ -31,7 +32,7 @@ header {
     background: var(--cor-primaria);
 }
 
-header > div {
+header>div {
     display: flex;
     justify-content: space-between;
 }
@@ -48,7 +49,7 @@ header > div {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    border: solid 0.3rem #fff;
+    border: solid .3rem #fff;
 }
 
 .perfil_conteudo {
@@ -57,13 +58,13 @@ header > div {
 
 }
 
-.perfil_conteudo > p {
+.perfil_conteudo>p {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.65);
 
 }
 
-.perfil_conteudo > h2 {
+.perfil_conteudo>h2 {
     font-size: 2rem;
     font-weight: lighter;
 
@@ -119,7 +120,10 @@ main {
     height: 50rem;
     z-index: 2;
 }
-
+.banner_img>img {
+    width: 46.4rem;
+    height: 46rem;
+}
 .banner_text {
     display: flex;
     align-items: center;
@@ -128,11 +132,65 @@ main {
     z-index: 1;
 }
 
-.banner_img>img {
-    width: 46.4rem;
-    height: 46rem;
+
+
+/*------------------Seção Turmas-------------------*/
+section h2 {
+    padding-top: 7rem;
+    padding-bottom: 1.6rem;
+    font-size: 2rem;
 }
 
+.hr1 {
+    width: 100%;
+    border: solid 0.1rem #F4F3F3;
+}
+
+.turmas {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+.article_turma {
+    width: 41rem;
+    height: 26.9rem;
+    border: solid .1rem #F4F3F3;
+    border-radius: 1.5rem;
+    margin-bottom: 10.9rem;
+    padding-left: 1.6rem;
+}
+
+.hr2 {
+    width: 100%;
+    border: solid 0.1rem #F4F3F3;
+}
+.article_turma > h3{
+    padding-top: 2.4rem;   
+}
+.article_turma > h4{
+    padding-top: 1.6rem;   
+}
+.info_turmas{
+    height: 16.2rem;
+
+}
+.info_envios{
+    padding-top: 1.6rem;
+
+}
+.info_envios a{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.8rem 3.4rem;
+    border: solid .1rem var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border-radius: 2rem;
+}
+
+/*----------------Footer---------------*/
 footer {
     text-align: center;
     font-size: 1.4rem;
