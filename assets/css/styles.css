@@ -11,8 +11,6 @@
     --cor-secundaria: #D1F6EF;
     --cor-terceiaria: #E1E3E8;
     --cor-quartenaria: hsla(169, 98%, 50%, 0.5);
- 
-
     font-size: 62.5%;
     /*Por default, 16px é igual a 100%, adotaremos 62,5% que é igual a 10px, para 
     facilitar a conversão para rem, sendo assim,  10px equivale a 1rem. Outro exemplo:
@@ -123,10 +121,12 @@ main {
     height: 50rem;
     z-index: 2;
 }
+
 .banner_img>img {
     width: 46.4rem;
     height: 46rem;
 }
+
 .banner_text {
     display: flex;
     align-items: center;
@@ -142,6 +142,7 @@ section h2 {
     padding-top: 7rem;
     padding-bottom: 1.6rem;
     font-size: 2.4rem;
+    font-weight: 500;
 }
 
 .hr1 {
@@ -149,13 +150,15 @@ section h2 {
     border: solid 0.1rem var(--cor-terceiaria);
 
 }
+
 /*Cards turma*/
 .turmas {
     padding-top: 4rem;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap:2rem;
+    gap: 2rem;
 }
+
 .article_turma {
     border: solid 0.1rem var(--cor-terceiaria);
     border-radius: 1.5rem;
@@ -163,17 +166,30 @@ section h2 {
 }
 
 /*Informações turma*/
-.info_turmas{
+.info_turmas {
     padding-top: 2.4rem;
-    padding-left: 1.6rem; 
+    padding-left: 1.6rem;
 }
-.info_turmas > h3{
+
+.info_turmas>h3 {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 400;
+    padding-bottom: 1.6rem;
+
 }
-.info_turmas > p{
+
+.info_turmas p {
     font-size: 1.6rem;
-    font-weight:lighter;
+    font-weight: lighter;
+    padding-bottom: 1rem;
+}
+
+.fa-solid {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding-top: 2.4rem;
+    padding-bottom: 1.6rem;
+    color: #6789CA;
 }
 
 .hr2 {
@@ -181,29 +197,32 @@ section h2 {
 }
 
 /*Informações envio*/
-.info_envios{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding-top: 1.6rem;
-    padding-left: 1.6rem; 
-}
-.info_envios > h4{
+.info_envios>h4 {
     font-size: 1.4rem;
     font-weight: lighter;
+    padding-top: 1.6rem;
+    padding-left: 1.6rem;
+    padding-bottom: 2.4rem;
 }
-.btn_posicao{
+
+.btn_posicao {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 1rem;
+    padding-right: 2.4rem;
+    padding-bottom: 2.4rem;
 }
-.btn_posicao a{
+
+.btn_posicao a {
     font-size: 1.4rem;
     padding: 0.8rem 3.4rem;
-    border: solid 0.1rem var(--cor-primaria);
-    background-color: #fff;
     color: var(--cor-primaria);
+    border: solid 0.1rem var(--cor-primaria);
     border-radius: 2rem;
+    background-color: #fff;
+
+
+  
 }
 
 /*----------------Footer---------------*/
