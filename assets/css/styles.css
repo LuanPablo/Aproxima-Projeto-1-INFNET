@@ -220,10 +220,26 @@ section h2 {
     border: solid 0.1rem var(--cor-primaria);
     border-radius: 2rem;
     background-color: #fff;
-
-
-  
 }
+
+/*Página Aluno*/
+
+.section_alunos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:2rem;
+}
+.container_aluno{
+    display: flex;
+    border: solid 0.1rem #0DBCA7;
+    border-radius: 1rem;
+}
+.info_aluno{
+    display: block;
+}
+
+
+
 
 /*----------------Footer---------------*/
 footer {
