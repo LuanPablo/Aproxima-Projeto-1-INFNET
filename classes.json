@@ -1,16 +1,24 @@
 {
-    "Turmas": [
-        {
-            "Turma": "1001",
-            "disciplina": "Química Geral"
+    "groups": [
+        {   "id": 1,
+            "Turma": "Turma 1001",
+            "disciplina": "Química Geral",
+            "Professor": "Luan Pablo Paiva",
+            "horário":"quarta-feira - 10:00 AM"
         },
         {
-            "Turma": "2001",
-            "disciplina": "Físico-Química"
+            "id": 2,
+            "Turma": "Turma 2001",
+            "disciplina": "Físico-Química",
+            "Professor": "Luan Pablo Paiva",
+            "horário":"terça-feira - 11:00 AM"
         },
         {
-            "Turma": "3001",
-            "disciplina":"Qúmica Orgânica"
+            "id": 3,
+            "Turma": "Turma 3001",
+            "disciplina":"Qúmica Orgânica",
+            "Professor": "Luan Pablo Paiva",
+            "horário":"quarta-feira - 08:00 AM"
         }
     ]
 }
