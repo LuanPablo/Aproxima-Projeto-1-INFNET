@@ -149,7 +149,7 @@ section h2 {
 }
 
 /*Cards turma*/
-.turmas {
+.turmas > div{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 2rem;
