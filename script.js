@@ -1,5 +1,5 @@
 const fetchClasses = () => {
-    fetch('http://127.0.0.1:5500/classes.json')
+    fetch('/classes.json')
         .then(res => res.json())
         .then(data => {
             const groupsRootEl = document.querySelector('#groups-root')
