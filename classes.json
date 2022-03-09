@@ -1,24 +1,103 @@
 {
-    "groups": [
-        {   "id": 1,
-            "turma": "Turma 1001",
+    "classes": [
+        {
+            "id": 1,
+            "turma": " 1001",
             "disciplina": "Química Geral",
             "professor": "Luan Pablo Paiva",
-            "horario":"quarta-feira - 10:00 AM"
+            "horario": "quarta-feira - 10:00 AM",
+            "alunos": [
+                {
+                    "id": 1,
+                    "Nome": " 1001",
+                    "Matricula": "Química Geral",
+                    "": 1,
+                    "Responsavel": "Luan Pablo Paiva",
+                    "telefone": 99999999999
+                },
+                {
+                    "id": 1,
+                    "Nome": " 1001",
+                    "Matricula": "Química Geral",
+                    "": 1,
+                    "Responsavel": "Luan Pablo Paiva",
+                    "telefone": 99999999999
+                },
+                {
+                    "id": 1,
+                    "Nome": " 1001",
+                    "Matricula": "Química Geral",
+                    "": 1,
+                    "Responsavel": "Luan Pablo Paiva",
+                    "telefone": 99999999999
+                }
+            ]
         },
         {
             "id": 2,
-            "turma": "Turma 2001",
+            "turma": " 2001",
             "disciplina": "Físico-Química",
             "professor": "Luan Pablo Paiva",
-            "horario":"terça-feira - 11:00 AM"
+            "horario": "terça-feira - 11:00 AM",
+            "alunos": [
+                {
+                    "id": 1,
+                    "Nome": " 1001",
+                    "Matricula": "Química Geral",
+                    "": 1,
+                    "Responsavel": "Luan Pablo Paiva",
+                    "telefone": 99999999999
+                },
+                {
+                    "id": 1,
+                    "Nome": " 1001",
+                    "Matricula": "Química Geral",
+                    "": 1,
+                    "Responsavel": "Luan Pablo Paiva",
+                    "telefone": 99999999999
+                },
+                {
+                    "id": 1,
+                    "Nome": " 1001",
+                    "Matricula": "Química Geral",
+                    "": 1,
+                    "Responsavel": "Luan Pablo Paiva",
+                    "telefone": 99999999999
+                }
+            ]
         },
         {
             "id": 3,
-            "turma": "Turma 3001",
-            "disciplina":"Qúmica Orgânica",
+            "turma": " 3001",
+            "disciplina": "Qúmica Orgânica",
             "professor": "Luan Pablo Paiva",
-            "horario":"quarta-feira - 08:00 AM"
+            "horario": "quarta-feira - 08:00 AM",
+            "alunos": [
+                {
+                    "id": 1,
+                    "Nome": " 1001",
+                    "Matricula": "Química Geral",
+                    "": 1,
+                    "Responsavel": "Luan Pablo Paiva",
+                    "telefone": 99999999999
+                },
+                {
+                    "id": 1,
+                    "Nome": " 1001",
+                    "Matricula": "Química Geral",
+                    "": 1,
+                    "Responsavel": "Luan Pablo Paiva",
+                    "telefone": 99999999999
+                },
+                {
+                    "id": 1,
+                    "Nome": " 1001",
+                    "Matricula": "Química Geral",
+                    "": 1,
+                    "Responsavel": "Luan Pablo Paiva",
+                    "telefone": 99999999999
+                }
+            ]
         }
     ]
 }

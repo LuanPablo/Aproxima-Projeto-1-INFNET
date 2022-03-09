@@ -3,47 +3,44 @@ const fetchClasses = () => {
         .then(res => res.json())
         .then(data => {
             const groupsRootEl = document.querySelector('#groups-root')
-            console.log('Json', data.groups)
-
-            for (let contador = 0; contador < data.groups.length; contador++) {
-                console.log(data.groups[contador])
-                const groupArticleEl = getArticleElement(data.groups[contador])
+            data.classes.forEach((classe) => {
+                const groupArticleEl = getArticleElement(classe)
                 groupsRootEl.appendChild(groupArticleEl)
-            }
+            })
         })
-        .catch(() => {
-            console.log('404')
-        })
+    // .catch(() => {
+    //     console.log('404')
+    // })
 }
 
-
-
-const getArticleElement = (group) => {
+const getArticleElement = (classe) => {
     const articleEl = document.createElement('article')
     articleEl.classList.add('article_turma')
 
-    const divInfoTurmas = document.createElement('div')
-    divInfoTurmas.classList.add('info_turmas')
+    const cardWrapInfo = document.createElement('div')
+    cardWrapInfo.classList.add('cardWrapInfo')
+    articleEl.appendChild(cardWrapInfo)
 
-    const articleTitleEl = document.createElement('h3')
-    articleTitleEl.textContent = group.turma
+    const cardWrapSends = document.createElement('div')
+    cardWrapSends.classList.add('cardWrapSends')
+    articleEl.appendChild(cardWrapSends)
 
-    const paragrafoEl1 = document.createElement('p')
-    paragrafoEl1.textContent = group.disciplina
+    cardWrapInfo.innerHTML = `
+        <h3>Turma ${classe.turma}</h3>
+        <p>Disciplina: ${classe.disciplina} </p>
+        <p>Professor: ${classe.professor}</p>
+        <i class="fa-solid fa-clock">${classe.horario}</i>
+        `
 
-    const paragrafoEl2 = document.createElement('p')
-    paragrafoEl2.textContent = group.professor
-
-    const divTurmas = document.createElement('div')
-    divTurmas.classList.add('turmas')
-
-
-    divTurmas.appendChild(articleEl)
-    articleEl.appendChild(divInfoTurmas)
-    divInfoTurmas.appendChild(articleTitleEl)
-    divInfoTurmas.appendChild(paragrafoEl1)
-    divInfoTurmas.appendChild(paragrafoEl2)
-
+    cardWrapSends.innerHTML = `
+        <hr class="hr2">
+        <h4>Enviar mensagem:</h4>
+        <div class="btn1_posicao">
+        <a href="turma.html">Para todos</a>
+        <a href="aluno.html">Por aluno</a>
+    `
     return articleEl
 }
+
+
 fetchClasses()
