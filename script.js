@@ -8,9 +8,9 @@ const fetchClasses = () => {
                 groupsRootEl.appendChild(groupArticleEl)
             })
         })
-    // .catch(() => {
-    //     console.log('404')
-    // })
+    .catch(() => {
+        console.log('Não foi possível carregar conteúdo')
+    })
 }
 
 const getArticleElement = (classe) => {
@@ -31,14 +31,13 @@ const getArticleElement = (classe) => {
         <p>Professor: ${classe.professor}</p>
         <i class="fa-solid fa-clock">${classe.horario}</i>
         `
-
     cardWrapSends.innerHTML = `
         <hr class="hr2">
         <h4>Enviar mensagem:</h4>
         <div class="btn1_posicao">
-        <a href="turma.html">Para todos</a>
-        <a href="aluno.html">Por aluno</a>
-    `
+            <a href="turma.html">Para todos</a>
+            <a href="aluno.html">Por aluno</a>
+        `
     return articleEl
 }
 
