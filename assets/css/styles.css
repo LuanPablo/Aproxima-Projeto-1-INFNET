@@ -213,7 +213,7 @@ section h2 {
     padding-bottom: 2.4rem;
 }
 
-.btn1_posicao a {
+.btnSelectClass {
     font-size: 1.4rem;
     padding: 0.8rem 3.4rem;
     color: var(--cor-primaria);
@@ -222,8 +222,18 @@ section h2 {
     background-color: #fff;
 }
 
+.btnSelectStudent {
+    font-size: 1.4rem;
+    padding: 0.8rem 3.4rem;
+    color: var(--cor-primaria);
+    border: solid 0.1rem var(--cor-primaria);
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+
 /*Página Aluno*/
-.info_topo {
+.info_top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -231,12 +241,12 @@ section h2 {
     padding-bottom: 1.6rem;
 }
 
-.info_topo>h2 {
+.info_top>h2 {
     font-size: 2.4rem;
     font-weight: 500;
 }
 
-.info_topo>h3 {
+.info_top>h3 {
     font-size: 1.2rem;
     font-weight: lighter;
 }
