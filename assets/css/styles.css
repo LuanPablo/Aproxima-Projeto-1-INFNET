@@ -273,7 +273,7 @@ section h2 {
 
 .container_aluno {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     gap: 1rem;
     border: solid 0.2rem var(--cor-terceiaria);
     border-radius: 1rem;
@@ -305,11 +305,13 @@ section h2 {
 
 .img_aluno img {
     border-radius: 1.5rem;
+    width:11.5rem;
+    height: 11.5rem;
 }
 
 .text_aluno label {
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1.4;
 }
 

@@ -138,9 +138,10 @@ const fetchStudents = () => {
                             </div>
                             <div class="text_aluno">
                                 <label for="">Nome:</label><br>
-                                <label for="">${student.name}</label><br>
+                                <label for="">${student.name}</label>
+                                <br><br>
                                 <label for="">Matricula:</label><br>
-                                <label for="">${student.enroll}</label><br>
+                                <label for="">${student.enroll}</label>
                             </div>
                             </div>
                   
@@ -155,3 +156,27 @@ const fetchStudents = () => {
 }
 
 fetchStudents()
+
+
+const fetchFormTop = () => {
+    fetch('/classes.json')
+        .then(res => res.json())
+        .then(data => {
+            const groupsRootEl = document.querySelector('#groups-form-top')
+            const groupDivFormTop = document.createElement('div')
+            groupDivFormTop.classList.add('info_top')
+
+            const savedClass = window.localStorage.getItem('savedClass')
+            groupDivFormTop.innerHTML = `
+                <h2>Aluno</h2>
+                <h3>Turma: ${savedClass}</h3>
+            `
+            groupsRootEl.appendChild(groupDivFormTop)
+
+        })
+        .catch(() => {
+            console.log('Não foi possível carregar conteúdo')
+        })
+}
+
+fetchFormTop()
