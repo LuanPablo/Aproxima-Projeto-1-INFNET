@@ -144,9 +144,18 @@ const fetchStudents = () => {
                                 <label for="">${student.enroll}</label>
                             </div>
                             </div>
+                            <div class="btn2_posicao">
+                                <button class="btn_acessar">Acessar</button>
+                            </div>
                   
                     `
+
                 sectionEl.appendChild(articleStudents)
+            })
+            const acessStudentForm = document.querySelector('.btn_acessar')
+            acessStudentForm.addEventListener('click', () => {
+                window.localStorage.setItem('acessForm', String(student.id))
+                window.location.pathname = 'form_student.html'
             })
 
         })
@@ -180,3 +189,7 @@ const fetchFormTop = () => {
 }
 
 fetchFormTop()
+
+// const fetchForm(){
+    
+// }

@@ -288,11 +288,11 @@ section h2 {
     padding-right: 2.4rem;
 }
 
-.btn2_posicao a {
+.btn_acessar {
     font-size: 1.4rem;
     font-weight: 400;
     color: var(--cor-primaria);
-    background: #02fdcf1c;
+    background: #fff;
     border: solid 0.1rem var(--cor-primaria);
     border-radius: 2rem;
     padding: 0.4rem 3.4rem;
@@ -365,12 +365,11 @@ section h2 {
 }
 #btn3_enviar {
     font-size: 1.4rem;
-    font-weight: 400;
+    padding: 0.8rem 3.4rem;
     color: var(--cor-primaria);
-    background: var(--cor-secundaria);
     border: solid 0.1rem var(--cor-primaria);
     border-radius: 2rem;
-    padding: 0.4rem 3.4rem;
+    background-color: #fff;
 }
 
 /*----------------Footer---------------*/
