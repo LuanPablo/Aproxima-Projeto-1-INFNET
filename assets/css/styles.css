@@ -12,8 +12,8 @@
     --cor-terceiaria: #E1E3E8;
     --cor-quartenaria: hsla(169, 98%, 50%, 0.5);
     font-size: 62.5%;
-    /*Por default, 16px é igual a 100%, adotaremos 62,5% que é igual a 10px, para 
-    facilitar a conversão para rem, sendo assim,  10px equivale a 1rem. Outro exemplo:
+    /*Por default os navegadores usam 16px de tamanho de fonte, isso é igual a 100%, adotaremos 62,5% 
+    que é igual a 10px, para facilitar a conversão para rem, sendo assim,  10px equivale a 1rem. Outro exemplo:
     1.5 rem equivale a 15px, basta multiplicar 1.5 rem por 10, ou do contrario, dividir por 10*/
 }
 
@@ -377,22 +377,27 @@ section h2 {
 /*------Formulário Aluno----------*/
 #container_form {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     gap: 2rem;
     margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
 }
 
 #info-relatives {
     width: 41.9rem;
-    height: 32.3rem;
+    height: 32.3rem; 
     border: 0.1rem solid var(--cor-primaria);
     border-radius: 1.5rem;
-
+    padding-top: 2.3rem;
+}
+#position_info_relatives{
+    margin: 0 auto;
 }
 
 #info-relatives img {
-    width: 16.0rem;
-    margin: 0 auto;
+    width: 16rem;
+    height: 16rem;
+    border-radius:1.5rem;
 }
 
 .wrapper {
@@ -400,32 +405,49 @@ section h2 {
     border: 0.1rem solid var(--cor-primaria);
     border-radius: 1.5rem;
     margin-bottom: 3.2rem;
-}
-
-#info-grade {
-    /* display: inline; */
     padding: 1.6rem 1rem;
 }
+
+/* #info-grade {
+    
+} */
 
 #hr3 {
     width: 15rem;
     border: solid 0.1rem var(--cor-terceiaria);
 }
+#label-checkbox{
+    font-size: 1.6rem;
+    color: #6789CA;
 
-#avaliacao {
+}
 
-    padding: 1.6rem 1rem;
+/* #avaliacao {
+
+
 }
 
 #frequency {
 
-    padding: 1.6rem 1rem;
 }
 
 #warning {
-    padding: 1.6rem 1rem;
+}  */
+
+#position_btn4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
 }
 
+#btn4_enviar {
+    font-size: 1.4rem;
+    padding: 0.8rem 3.4rem;
+    color: var(--cor-primaria);
+    border: solid 0.1rem var(--cor-primaria);
+    border-radius: 2rem;
+    background-color: #fff;
+}
 /*----------------Footer---------------*/
 footer {
     text-align: center;

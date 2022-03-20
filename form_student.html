@@ -33,31 +33,30 @@
 
 
 
-    <main class="container ">
+    <main class="container">
         <div id="groups-form-top"></div>
         <hr class="hr1">
 
         <div id="container_form">
-
             <!-- <div id="grops-form-student"></div> -->
             <aside id="info-relatives">
-                <img src="/assets/img/10.png" alt="">
-                <div>
-                    <p>Nome do reponsável:</p>
-                    <label for=""> //students.relatives</label>
+                <div id="position_info_relatives">
+                    <img src="/assets/img/10.png" alt="">
+                    <div>
+                        <p>Nome do reponsável:</p>
+                        <label for=""> //students.relatives</label>
+                    </div>
+                    <div>
+                        <p>Contato</p>
+                        <label for="">//students.phone</label>
+                    </div>
                 </div>
-                <div>
-                    <p>Contato</p>
-                    <label for="">//students.phone</label>
-                </div>
-
             </aside>
 
-            <form action="">
+            <form action="" id="form_student">
                 <div class="wrapper" id="info-grade">
-
-                    <input type="checkbox" value="avaliações" />
-                    <label for="">Avaliações</label>
+                    <input type="checkbox" value="avaliacoes" />
+                    <label class="label-checkbox" for="">Avaliações</label>
 
                     <div class="avaliacao">
                         <label for="">Avaliação 1</label>
@@ -95,8 +94,9 @@
                         <textarea name="" id="" rows="10" placeholder="Digite uma observação"></textarea>
                     </article>
                 </div>
-
-                <button type="submit">Enviar</button>
+                <div id="position_btn4">
+                    <button id="btn4_enviar" type="submit">Enviar</button>
+                </div>
             </form>
         </div>
     </main>
