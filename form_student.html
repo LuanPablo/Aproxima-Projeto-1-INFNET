@@ -58,15 +58,12 @@
                     <input type="checkbox" value="avaliacoes" />
                     <label class="label-checkbox" for="">Avaliações</label>
 
-                    <div class="avaliacao">
-                        <label for="">Avaliação 1</label>
-                        <input type="text" name="" id="" placeholder="Digite a nota" />
-                        <hr id="hr3">
-                    </div>
-                    <div id="media">
-                        <label for="">Média</label>
-                        <span>8,5</span>
-                        <input type="button" value="Adicionar avaliação" />
+                    <div id="avaliable-form"></div>
+
+                    <div>
+                        <label for="media">Média</label>
+                        <span id="media">0</span>
+                        <button type="button" onclick="addAvaliationInput()">Adicionar avaliação</button>
                     </div>
                 </div>
 
@@ -76,11 +73,11 @@
                         <input type="checkbox" value="Frequência semanal">
                         <label for="">Frequência semanal</label>
                         <div>
-                            <button id="monday">Segunda</button>
-                            <button id="tuesday">Terça</button>
-                            <button id="wednesday">Quarta</button>
-                            <button id="thursday">Quinta</button>
-                            <button id="friday">Sexta</button>
+                            <button id="monday" type="button">Segunda</button>
+                            <button id="tuesday" type="button">Terça</button>
+                            <button id="wednesday" type="button">Quarta</button>
+                            <button id="thursday" type="button">Quinta</button>
+                            <button id="friday" type="button">Sexta</button>
                         </div>
 
                     </article>

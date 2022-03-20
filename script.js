@@ -1,5 +1,3 @@
-
-// Script página home
 const fetchClasses = () => {
     fetch('/classes.json')
         .then(res => res.json())
@@ -66,7 +64,7 @@ fetchClasses()
 const fetchClassesTop = () => {
     fetch('/classes.json')
         .then(res => res.json())
-        .then(data => {
+        .then(() => {
             const groupsRootEl = document.querySelector('#groups-classe-top')
             const groupDivClasseTop = document.createElement('div')
             groupDivClasseTop.classList.add('info_top')
@@ -90,7 +88,7 @@ fetchClassesTop()
 const fetchStudentsTop = () => {
     fetch('/classes.json')
         .then(res => res.json())
-        .then(data => {
+        .then(() => {
             const groupsRootEl = document.querySelector('#groups-students-top')
             const groupDivStudentTop = document.createElement('div')
             groupDivStudentTop.classList.add('info_top')
@@ -166,11 +164,12 @@ const fetchStudents = () => {
 
 fetchStudents()
 
+//Script da página de formulário
 
 const fetchFormTop = () => {
     fetch('/classes.json')
         .then(res => res.json())
-        .then(data => {
+        .then(() => {
             const groupsRootEl = document.querySelector('#groups-form-top')
             const groupDivFormTop = document.createElement('div')
             groupDivFormTop.classList.add('info_top')
@@ -190,6 +189,62 @@ const fetchFormTop = () => {
 
 fetchFormTop()
 
-// const fetchForm(){
-    
-// }
+const avaliations = [];
+
+const addAvaliationInput = () => {
+    const avaliationNumber = avaliations.length + 1;
+    const formRootEl = document.querySelector('#avaliable-form');
+    const avaliableDivForm = document.createElement('div');
+    avaliableDivForm.classList.add('avaliacao');
+    avaliableDivForm.id = `avaliation-${avaliationNumber}`
+    avaliableDivForm.innerHTML = `
+        <label for="">Avaliação ${avaliationNumber}</label>
+        <input type="number" min="0" max="10" onchange="onChangeInputAvaliation(this, ${avaliationNumber})" id="input-${avaliationNumber}" placeholder="Ex: 10" />
+        <button type="button" onclick='removeAvaliationInput(this)'>Remover avaliação ${avaliationNumber}</button>
+        <hr id="hr3"></hr>
+    `;
+    formRootEl.appendChild(avaliableDivForm)
+    avaliations.push({
+        id: avaliationNumber,
+        value: 0
+    })
+}
+
+const removeAvaliationInput = (element) => {
+    let input = element.parentNode.id;
+    const id = Number(input.replace(/avaliation-/g, ''))
+
+    if (id !== 1) {
+
+        input = document.getElementById(input);
+        input.parentNode.removeChild(input);
+
+        const index = avaliations.findIndex(avalitaion => avalitaion.id === id)
+        avaliations.splice(index, 1);
+
+        updateLabelTotal()
+    }
+
+    return false;
+}
+
+const updateLabelTotal = () => {
+    const labelRootEl = document.querySelector('#media');
+
+    const total = avaliations.reduce((acc, cur) => (
+        acc + cur.value
+    ), 0) / avaliations.length;
+
+    labelRootEl.innerHTML = String(total.toFixed(1)).replace(/[.]/g, ',');
+}
+
+const onChangeInputAvaliation = (element, avaliationNumber) => {
+
+    const index = avaliations.findIndex(avalitaion => avalitaion.id === avaliationNumber)
+    avaliations[index].value = parseFloat(element.value);
+
+    updateLabelTotal();
+    return false;
+}
+
+addAvaliationInput()
