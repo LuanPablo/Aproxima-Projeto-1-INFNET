@@ -30,43 +30,75 @@
             </nav>
         </div>
     </header>
-    <main class="container">
+
+
+
+    <main class="container ">
         <div id="groups-form-top"></div>
         <hr class="hr1">
-        <!-- <div id="grops-form-student"></div> -->
-        <section class="info-relatives">
-            <img src="/assets/img/10.png" alt="">
-            <label for="">Reponsável:</label>
-            <label for=""> </label>
-            <label for=""></label>
-            <label for=""></label>
-        </section>
 
-        <form action="">
-            <div class="grade">
-                <input type="checkbox" value="avaliações" />
-                <label for="">Avaliações</label>
-                <div class="avaliacao">
-                    <label for="">Avaliação 1</label>
-                    <input type="text" name="" id="" />
+        <div id="container_form">
+
+            <!-- <div id="grops-form-student"></div> -->
+            <aside id="info-relatives">
+                <img src="/assets/img/10.png" alt="">
+                <div>
+                    <p>Nome do reponsável:</p>
+                    <label for=""> //students.relatives</label>
+                </div>
+                <div>
+                    <p>Contato</p>
+                    <label for="">//students.phone</label>
                 </div>
 
-                <label for="">Média</label>
-                <label for="media"></label>
+            </aside>
 
-                <input type="button" value="Adicionar avaliação" />
-                </article>
-                <article class="frequency">
-                    <input type="checkbox" value="Frequência semanal">
-                    <label for="">Frequência semanal</label>
-                </article>
-                <article class="warning">
-                    <input type="checkbox" value="Advertências">
-                    <label for="">Advertências</label>
-                </article>
-            </div>
-        </form>
+            <form action="">
+                <div class="wrapper" id="info-grade">
 
+                    <input type="checkbox" value="avaliações" />
+                    <label for="">Avaliações</label>
+
+                    <div class="avaliacao">
+                        <label for="">Avaliação 1</label>
+                        <input type="text" name="" id="" placeholder="Digite a nota" />
+                        <hr id="hr3">
+                    </div>
+                    <div id="media">
+                        <label for="">Média</label>
+                        <span>8,5</span>
+                        <input type="button" value="Adicionar avaliação" />
+                    </div>
+                </div>
+
+                <div class="wrapper">
+
+                    <article id="frequency">
+                        <input type="checkbox" value="Frequência semanal">
+                        <label for="">Frequência semanal</label>
+                        <div>
+                            <button id="monday">Segunda</button>
+                            <button id="tuesday">Terça</button>
+                            <button id="wednesday">Quarta</button>
+                            <button id="thursday">Quinta</button>
+                            <button id="friday">Sexta</button>
+                        </div>
+
+                    </article>
+                </div>
+                <div class="wrapper">
+                    <article id="warning">
+                        <div>
+                            <input type="checkbox" value="Advertências">
+                            <label for="">Advertências</label>
+                        </div>
+                        <textarea name="" id="" rows="10" placeholder="Digite uma observação"></textarea>
+                    </article>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>Aproxima - IFNET. Todos os Direitos reservados</p>

@@ -305,7 +305,7 @@ section h2 {
 
 .img_aluno img {
     border-radius: 1.5rem;
-    width:11.5rem;
+    width: 11.5rem;
     height: 11.5rem;
 }
 
@@ -358,11 +358,13 @@ section h2 {
     width: 100%;
     height: 13.5rem;
 }
-#position_btn3{
+
+#position_btn3 {
     display: flex;
-    flex-direction:row-reverse;
-    align-items: flex-end; 
+    flex-direction: row-reverse;
+    align-items: flex-end;
 }
+
 #btn3_enviar {
     font-size: 1.4rem;
     padding: 0.8rem 3.4rem;
@@ -370,6 +372,58 @@ section h2 {
     border: solid 0.1rem var(--cor-primaria);
     border-radius: 2rem;
     background-color: #fff;
+}
+
+/*------Formulário Aluno----------*/
+#container_form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-top: 4.5rem;
+}
+
+#info-relatives {
+    width: 41.9rem;
+    height: 32.3rem;
+    border: 0.1rem solid var(--cor-primaria);
+    border-radius: 1.5rem;
+
+}
+
+#info-relatives img {
+    width: 16.0rem;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 80rem;
+    border: 0.1rem solid var(--cor-primaria);
+    border-radius: 1.5rem;
+    margin-bottom: 3.2rem;
+}
+
+#info-grade {
+    /* display: inline; */
+    padding: 1.6rem 1rem;
+}
+
+#hr3 {
+    width: 15rem;
+    border: solid 0.1rem var(--cor-terceiaria);
+}
+
+#avaliacao {
+
+    padding: 1.6rem 1rem;
+}
+
+#frequency {
+
+    padding: 1.6rem 1rem;
+}
+
+#warning {
+    padding: 1.6rem 1rem;
 }
 
 /*----------------Footer---------------*/
