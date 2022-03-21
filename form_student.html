@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3654d301c9.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
@@ -38,61 +40,52 @@
         <hr class="hr1">
 
         <div id="container_form">
-            <!-- <div id="grops-form-student"></div> -->
-            <aside id="info-relatives">
-                <div id="position_info_relatives">
-                    <img src="/assets/img/10.png" alt="">
-                    <div>
-                        <p>Nome do reponsável:</p>
-                        <label for=""> //students.relatives</label>
-                    </div>
-                    <div>
-                        <p>Contato</p>
-                        <label for="">//students.phone</label>
-                    </div>
-                </div>
-            </aside>
+            <div id="groups-form-student"></div>
 
-            <form action="" id="form_student">
+            <form id="form_student">
                 <div class="wrapper" id="info-grade">
-                    <input type="checkbox" value="avaliacoes" />
-                    <label class="label-checkbox" for="">Avaliações</label>
+                    <div class="title-wrapper">
+                        <input type="checkbox" value="avaliacoes" />
+                        <label class="label-checkbox" for="">Avaliações</label>
+                    </div>
 
                     <div id="avaliable-form"></div>
 
-                    <div>
-                        <label for="media">Média</label>
-                        <span id="media">0</span>
-                        <button type="button" onclick="addAvaliationInput()">Adicionar avaliação</button>
+                    <div class="footer-wrapper">
+                        <div class="row">
+                            <label class="label-avaliation" for="media">Média</label>
+                            <span class="total" id="media">0,0</span>
+                        </div>
+                        <button type="button" class="main-button" onclick="addAvaliationInput()">Adicionar avaliação</button>
                     </div>
                 </div>
 
                 <div class="wrapper">
-
                     <article id="frequency">
-                        <input type="checkbox" value="Frequência semanal">
-                        <label for="">Frequência semanal</label>
-                        <div>
-                            <button id="monday" type="button">Segunda</button>
-                            <button id="tuesday" type="button">Terça</button>
-                            <button id="wednesday" type="button">Quarta</button>
-                            <button id="thursday" type="button">Quinta</button>
-                            <button id="friday" type="button">Sexta</button>
+                        <div class="title-wrapper">
+                            <input type="checkbox" value="Frequência semanal">
+                            <label class="label-checkbox" for="">Frequência semanal</label>
                         </div>
-
+                        <div>
+                            <button id="segunda" class="button-secondary" type="button" onclick="toggleMissingDayToWeek(this)">Segunda</button>
+                            <button id="terça" class="button-secondary" type="button" onclick="toggleMissingDayToWeek(this)">Terça</button>
+                            <button id="quarta" class="button-secondary" type="button" onclick="toggleMissingDayToWeek(this)">Quarta</button>
+                            <button id="quinta" class="button-secondary" type="button" onclick="toggleMissingDayToWeek(this)">Quinta</button>
+                            <button id="sexta" class="button-secondary" type="button" onclick="toggleMissingDayToWeek(this)">Sexta</button>
+                        </div>
                     </article>
                 </div>
                 <div class="wrapper">
                     <article id="warning">
-                        <div>
+                        <div class="title-wrapper">
                             <input type="checkbox" value="Advertências">
-                            <label for="">Advertências</label>
+                            <label class="label-checkbox" for="">Advertências</label>
                         </div>
-                        <textarea name="" id="" rows="10" placeholder="Digite uma observação"></textarea>
+                        <textarea name="" id="" rows="8" placeholder="Digite uma observação" onchange="onChangeText(this)"></textarea>
                     </article>
                 </div>
                 <div id="position_btn4">
-                    <button id="btn4_enviar" type="submit">Enviar</button>
+                    <button id="btn4_enviar" class="main-button" type="button" onclick="sendToWhatsapp()">Enviar</button>
                 </div>
             </form>
         </div>
@@ -102,6 +95,6 @@
     </footer>
 </body>
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="assets/JS/script.js"></script>
 
 </html>

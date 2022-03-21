@@ -7,25 +7,33 @@
 }
 
 :root {
-    --cor-primaria: #0DBCA7;
-    --cor-secundaria: #D1F6EF;
-    --cor-terceiaria: #E1E3E8;
+    --cor-primaria: #0dbca7;
+    --cor-secundaria: #d1f6ef;
+    --cor-terceiaria: #e1e3e8;
     --cor-quartenaria: hsla(169, 98%, 50%, 0.5);
     font-size: 62.5%;
     /*Por default os navegadores usam 16px de tamanho de fonte, isso é igual a 100%, adotaremos 62,5% 
-    que é igual a 10px, para facilitar a conversão para rem, sendo assim,  10px equivale a 1rem. Outro exemplo:
-    1.5 rem equivale a 15px, basta multiplicar 1.5 rem por 10, ou do contrario, dividir por 10*/
+      que é igual a 10px, para facilitar a conversão para rem, sendo assim,  10px equivale a 1rem. Outro exemplo:
+      1.5 rem equivale a 15px, basta multiplicar 1.5 rem por 10, ou do contrario, dividir por 10*/
 }
 
 .container {
     width: 100%;
-    max-width: 124.0rem;
+    max-width: 124rem;
     margin: auto;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     height: 1vmax;
+}
+
+img {
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
 }
 
 /*---------------------HEADER-------------------------*/
@@ -44,14 +52,13 @@ header>div {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: 1.4rem 0 1.4rem 0;
-
 }
 
 .perfil img {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    border: solid .3rem #fff;
+    border: solid 0.3rem #fff;
 }
 
 .perfil_conteudo {
@@ -129,7 +136,7 @@ main {
     display: flex;
     align-items: center;
     font-size: 3.5rem;
-    color: #0DBCA7;
+    color: #0dbca7;
     z-index: 1;
 }
 
@@ -189,7 +196,7 @@ section h2 {
     font-weight: lighter;
     padding-top: 2.4rem;
     padding-bottom: 1.6rem;
-    color: #6789CA;
+    color: #6789ca;
 }
 
 .hr2 {
@@ -230,7 +237,6 @@ section h2 {
     border-radius: 2rem;
     background-color: #fff;
 }
-
 
 /*Página Aluno*/
 .info_top {
@@ -352,11 +358,12 @@ section h2 {
     padding-bottom: 3rem;
 }
 
-.input_text input {
+.input_text textarea {
+    width: 100%;
     border: solid 0.1rem var(--cor-terceiaria);
     border-radius: 1.5rem;
-    width: 100%;
     height: 13.5rem;
+    padding: 1rem 1rem;
 }
 
 #position_btn3 {
@@ -377,7 +384,7 @@ section h2 {
 /*------Formulário Aluno----------*/
 #container_form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     gap: 2rem;
     margin-top: 4.5rem;
     margin-bottom: 4.5rem;
@@ -385,51 +392,166 @@ section h2 {
 
 #info-relatives {
     width: 41.9rem;
-    height: 32.3rem; 
     border: 0.1rem solid var(--cor-primaria);
     border-radius: 1.5rem;
-    padding-top: 2.3rem;
+    padding: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#position_info_relatives {
+    margin: 0 auto;
 }
 
 #info-relatives img {
     width: 16rem;
     height: 16rem;
-    border-radius:1.5rem;
+    border-radius: 1.5rem;
 }
 
 .wrapper {
-    width: 80rem;
+    width: 100%;
     border: 0.1rem solid var(--cor-primaria);
     border-radius: 1.5rem;
     margin-bottom: 3.2rem;
-    padding: 1.6rem 1rem;
+    padding: 2rem;
+}
+
+.title-wrapper {
+    margin-bottom: 20px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-button {
+    font-size: 1.4rem;
+    padding: 0.8rem 3.4rem;
+    color: var(--cor-primaria);
+    border: solid 0.1rem var(--cor-primaria);
+    border-radius: 2rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input[type='number'] {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e1e3e8;
+    border-radius: 25%;
+    padding: 5px;
+}
+
+.label-avaliation {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #757575;
+}
+
+.button-remove {
+    background: transparent;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-trash {
+    color: red;
+    font-size: 16px;
+}
+
+.total {
+    color: #313131;
+    font-size: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-secondary {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 0 5px;
+    background: #f2fffd;
+    color: var(--cor-primaria);
+}
+
+.button-danger {
+    background: #ffd7d7;
+    color: #712b2b;
+}
+
+#avaliable-form .avaliation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#media {
+    margin-left: 10px;
+}
+
+#avaliable-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.profile-info {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-info label {
+    font-size: 1.3rem;
+}
+
+.profile-info p {
+    font-size: 1.3rem;
+    color: #6C6C6C;
 }
 
 /* #info-grade {
-    
-} */
+      
+  } */
 
 #hr3 {
-    width: 15rem;
+    width: 100%;
     border: solid 0.1rem var(--cor-terceiaria);
 }
-#label-checkbox{
-    font-size: 1.6rem;
-    color: #6789CA;
 
+.label-checkbox {
+    font-size: 1.8rem;
+    color: #000;
+}
+
+textarea {
+    width: 100%;
 }
 
 /* #avaliacao {
-
-
-}
-
-#frequency {
-
-}
-
-#warning {
-}  */
+  
+  
+  }
+  
+  #frequency {
+  
+  }
+  
+  #warning {
+  }  */
 
 #position_btn4 {
     display: flex;
@@ -445,6 +567,7 @@ section h2 {
     border-radius: 2rem;
     background-color: #fff;
 }
+
 /*----------------Footer---------------*/
 footer {
     text-align: center;
