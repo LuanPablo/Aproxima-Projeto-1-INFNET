@@ -76,7 +76,6 @@ const fetchClassesTop = () => {
                 <h3>Turma: ${savedClass}</h3>
             `
             groupsRootEl.appendChild(groupDivClasseTop)
-
         })
         .catch(() => {
             console.log('Não foi possível carregar conteúdo')
