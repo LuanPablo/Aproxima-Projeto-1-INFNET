@@ -27,7 +27,7 @@ const getArticleHome = (classe) => {
 
     cardWrapInfo.innerHTML = `
         <h3>Turma ${classe.turma}</h3>
-        <p>Disciplina: ${classe.disciplina} </p>
+        <p>Disciplina: ${classe.disciplina}</p>
         <p>Professor: ${classe.professor}</p>
         <i class="fa-solid fa-clock">${classe.horario}</i>
         `
@@ -145,8 +145,7 @@ const fetchStudents = () => {
                             <div class="btn2_posicao">
                                 <button class="btn_acessar">Acessar</button>
                             </div>
-                  
-                    `
+                        `
 
                 sectionEl.appendChild(articleStudents)
             })

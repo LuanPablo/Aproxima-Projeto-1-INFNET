@@ -3,7 +3,7 @@
         {
             "id": 1,
             "turma": 1001,
-            "subject": "Química Geral",
+            "disciplina": "Química Geral",
             "professor": "Luan Pablo Paiva",
             "horario": "quarta-feira - 10:00 AM",
             "students": [
@@ -132,7 +132,7 @@
         {
             "id": 2,
             "turma": 2001,
-            "subject": "Físico-Química",
+            "disciplina": "Físico-Química",
             "professor": "Luan Pablo Paiva",
             "horario": "terça-feira - 11:00 AM",
             "students": [
@@ -261,7 +261,7 @@
         {
             "id": 3,
             "turma": 3001,
-            "subject": "Química Orgânica",
+            "disciplina": "Química Orgânica",
             "professor": "Luan Pablo Paiva",
             "horario": "quarta-feira - 08:00 AM",
             "students": [
